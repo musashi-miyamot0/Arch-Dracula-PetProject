@@ -78,9 +78,9 @@ WSGI_APPLICATION = "arch_dracula.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "arch",
-        "USER": "root",
-        "PASSWORD": "muraddino18",
+        "NAME": "NAME",
+        "USER": "USER",
+        "PASSWORD": "PASSW",
         "HOST": "localhost",
         "PORT": "3306",
     }
