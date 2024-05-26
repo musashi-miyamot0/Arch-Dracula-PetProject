@@ -1,0 +1,60 @@
+{% extends 'dracula_home/base.html' %}
+{% load static %}
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static 'dracula_home_page/css/download.css' %}">
+{% endblock css_link %}
+
+{% block content %}
+
+<button onclick="downloadFile()" type="button"
+    class="download_button">Download</button>
+
+<div class="block"></div>
+<div class="theme">
+    <img src="{% static 'dracula_home_page/images/pallete.png' %}" alt>
+    <h1>Цветовая тема</h1>
+    <p>Наша сборка Arch Linux имеет элегантную и минималистичную цветовую
+        гамму,
+        основанную на глубоких оттенках фиолетового и серого. Этот подход
+        обеспечивает приятное визуальное восприятие, снижая утомляемость глаз
+        при
+        длительной работе за компьютером. Цветовая палитра тщательно подобрана,
+        чтобы создавать ощущение спокойствия и сосредоточенности.
+    </p>
+
+</div>
+
+<div class="trebovanie">
+    <img src="{% static 'dracula_home_page/images/pc.png' %}" alt>
+    <p><h1>Системные требования</h1>
+
+        <p class='treb'>Минимальные:</p>
+        <p>- Процессор: Intel Core i3 или AMD Ryzen 3</p>
+        <p>- Оперативная память: 4 ГБ</p>
+        <p>- Свободное дисковое пространство: 20 ГБ</p>
+
+        <p class="treb">Рекомендуемые:</p>
+        <p>- Процессор: Intel Core i5 или AMD Ryzen 5</p>
+        <p>- Оперативная память: 8 ГБ</p>
+        <p>- Свободное дисковое пространство: 50 ГБ</p>
+    </p>
+</div>
+
+<div class="devolp">
+    <img src="{% static 'dracula_home_page/images/code.png' %}" alt>
+    <h1>Сборка для разработчиков</h1>
+    <p>Наша Arch Linux сборка является идеальным выбором для разработчиков,
+        предлагая широкий спектр инструментов и библиотек, необходимых для
+        создания передовых приложений. Она включает в себя популярные языки
+        программирования, такие как Python, Java, Rust и Go, а также мощные
+        редакторы кода, такие как Visual Studio Code и Neovim.</p>
+</div>
+<img class='arch' src="{% static 'dracula_home_page/images/arch_logo.png' %}"
+    alt>
+<img class='dracula' src="{% static 'dracula_home_page/images/dracula.png' %}"
+    alt>
+<img class='arch_dracula' src="{% static 'dracula_home_page/images/logo.png' %}"
+    alt>
+<script src="{% static 'dracula_home_page/js/download.js' %}"></script>
+{% endblock content %}

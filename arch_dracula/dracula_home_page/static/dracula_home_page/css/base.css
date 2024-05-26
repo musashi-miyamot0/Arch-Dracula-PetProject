@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #30323f;
+}
+
+
+
+.logo_img {
+    padding-right: 10px;
+    border-right: 2px rgba(255, 255, 255, 0.158) solid;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50px;
+}
+
+@keyframes animateGradient {
+    0% {
+        border-image-source: linear-gradient(to right, #BD93F9, #FF79C6);
+    }
+
+    50% {
+        border-image-source: linear-gradient(to right, #FF79C6, #BD93F9);
+    }
+
+    100% {
+        border-image-source: linear-gradient(to right, #BD93F9, #FF79C6);
+    }
+}
+
+/* TODO решить проблему с плавной отменой градиента*/
+
+
+.header_panel:not(:hover) {
+    border-image-source: linear-gradient(to right, #BD93F9, #FF79C6);
+}
+
+
+
+.header_panel {
+    z-index: 1000;
+    position: fixed !important;
+    left: 5%;
+    top: 1%;
+    display: flex;
+    transition: 5s ease-in;
+    border-bottom: 7px solid transparent;
+    border-radius: 5px;
+    background-color: #282A36;
+    width: 90%;
+    border-image-source: linear-gradient(to right, #BD93F9, #FF79C6);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+}
+
+.header_panel a {
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 10px;
+    padding-top: 20px;
+    position: relative;
+    left: 50px;
+}

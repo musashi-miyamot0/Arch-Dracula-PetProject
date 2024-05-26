@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    height: 100vh;
+    /* Используйте vh вместо % для корректного определения высоты */
+    margin: 0;
+    /* Добавляем нулевые отступы для body */
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+h1 {
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #8BE9FD;
+    width: auto;
+    /* Убираем фиксированную ширину заголовка */
+}
+
+.img_clear_table1:hover {
+    z-index: 123123;
+    width: 500px;
+    filter: blur(0);
+    /* Перенесли эту строку, чтобы она применялась к состоянию при наведении */
+    border: 10px #9efa8c double;
+    transform: scale(1.01);
+}
+
+.img_clear_table4:hover {
+    border: 10px #9efa8c double;
+    z-index: 123123;
+    transform: scale(1.2);
+}
+
+.img_clear_table3:hover {
+    z-index: 123123;
+    transform: scale(1.5);
+    border: 10px #9efa8c double;
+}
+
+.img_clear_table2:hover {
+    z-index: 123123;
+    transform: scale(1.2);
+    border: 10px #9efa8c double;
+}
+
+.img_clear_table1 {
+    filter: blur(3px);
+    transition: 0.5s;
+    -webkit-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    border: 5px #F1FA8C solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    top: 300px;
+    width: 400px;
+}
+
+.img_clear_table3 {
+    transition: 0.5s;
+    -webkit-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    border: 5px #F1FA8C solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 350px;
+    top: 400px;
+    width: 400px;
+}
+
+.img_clear_table2 {
+    transition: 0.5s;
+    -webkit-box-shadow: 50px 29px 51px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 50px 29px 51px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: 50px 29px 51px -10px rgba(0, 0, 0, 0.48);
+    border: 5px #50FA7B solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 700px;
+    top: 750px;
+    width: 600px;
+}
+
+.block_1,
+.block_2,
+.block_3 {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.block_1 {
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.block_2 {
+    position: relative;
+    top: -200px;
+}
+
+.block_3 {
+    position: relative;
+    top: -550px;
+}
+
+.post_header_1 h1 {
+    position: relative;
+    width: 300px;
+    left: 650px;
+    top: -285px;
+}
+
+.post_header_1 p {
+    transition: 0.5s;
+    position: relative;
+    width: 800px;
+    left: 800px;
+    top: -300px;
+}
+
+.post_header_2 p {
+    transition: 0.5s;
+    position: relative;
+    width: 600px;
+    left: 50px;
+    top: -660px;
+}
+
+.post_header_2 h1 {
+    position: relative;
+    width: 600px;
+    left: 200px;
+    top: -700px;
+}
+
+.post_header_3 h1 {
+    position: relative;
+    width: 600px;
+    left: 600px;
+    top: -1050px;
+}
+
+.post_header_3 p {
+    transition: 0.5s;
+    position: relative;
+    width: 800px;
+    left: 100px;
+    top: -1030px;
+}
+
+.img_clear_table4 {
+    transition: 0.5s;
+    -webkit-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    box-shadow: -13px 13px 51px -10px rgba(0, 0, 0, 0.48);
+    border: 5px #FF5555 solid;
+    border-radius: 10px;
+    position: relative;
+    width: 600px;
+    left: 1000px;
+    top: -1380px;
+}
+
+.img_clear_table1:hover .head_clear_table_1 {
+    background-color: #50FA7B;
+}
+
+#full_block3 {
+    transition: 0.5s;
+}
+
+.opacity_and_up {
+    filter: opacity(10%);
+}

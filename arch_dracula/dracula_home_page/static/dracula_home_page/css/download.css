@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+
+.block {
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+
+    filter: brightness(89%);
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to left bottom, #44475a, #3d4051, #363848, #2f313f, #282a36);
+    width: 130%;
+    left: -10%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+}
+
+p {
+
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+}
+
+@keyframes shadowAnimate {
+    0% {
+        -webkit-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0);
+        -moz-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0);
+        box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0);
+    }
+
+    50% {
+        -webkit-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.51);
+        -moz-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.51);
+        box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.10);
+    }
+
+    100% {
+        -webkit-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.51);
+        -moz-box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.51);
+        box-shadow: 25px 95px 258px 84px rgba(189, 147, 249, 0.51);
+    }
+}
+
+
+.download_button_width {
+    width: 200px !important;
+    left: 45% !important;
+}
+
+.download_button {
+
+    transition: 0.3s ease-in;
+    text-shadow: 4px 8px 15px rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    border: #BD93F9 4px solid;
+    font-size: 30px;
+    background-color: #50FA7B;
+    color: #F8F8F2;
+    font-family: "Ubuntu", sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+
+.arch_move_anima {
+
+    left: 40% !important;
+}
+
+.dracula_move_anima {
+
+    right: 40% !important;
+}
+
+.arch_dracula_anima {
+    opacity: 100% !important;
+    top: 70% !important;
+}
+
+@keyframes archShadow {
+    0% {
+        filter: drop-shadow(0 0 100px #0f94d2);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 30px #0f94d2);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 100px #0f94d2);
+    }
+}
+
+@keyframes draculaShadow {
+    0% {
+        filter: drop-shadow(0 0 100px #232440);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 30px #232440);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 100px #232440);
+    }
+}
+
+@keyframes ArchdraculaShadow {
+    0% {
+        filter: drop-shadow(0 0 100px #3d3f46);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 30px #3d3f46);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 100px #3d3f46);
+    }
+}
+
+.arch_shadow {
+    animation: archShadow infinite 1s ease;
+}
+
+.dracula_shadow {
+    animation: draculaShadow infinite 1s ease;
+}
+
+.Archdracula_shadow {
+    animation: ArchdraculaShadow infinite 0.1s ease;
+}
+
+.arch {
+
+    transition: 1s ease;
+    position: absolute;
+    width: 80px;
+    top: 80%;
+    left: -10%;
+}
+
+.dracula {
+    transition: 1s;
+    position: absolute;
+    width: 80px;
+    top: 80%;
+    right: -10%;
+}
+
+
+h1 {
+    font-family: 'Ubuntu', cursive;
+    color: #8BE9FD;
+}
+
+.arch_dracula {
+    opacity: 0%;
+    transition: 1s;
+    position: absolute;
+    width: 80px;
+    top: 90%;
+    left: 48%;
+}
+
+.trebovanie {
+    width: 200px;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+.theme {
+    width: 200px;
+    position: absolute;
+    right: 45%;
+    top: 10%;
+}
+
+.devolp {
+    width: 200px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.treb {
+    font-family: 'Ubuntu', cursive;
+    color: #50FA7B;
+}
+
+.theme img {}

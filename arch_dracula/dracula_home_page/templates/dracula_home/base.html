@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+  <head>
+    <link
+      rel="stylesheet"
+      href="{% static 'dracula_home_page/css/base.css' %}"
+    />
+    {% block css_link %} {% endblock css_link %}
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block titile %} {% endblock titile %}</title>
+  </head>
+  <body>
+    <div class="header_panel">
+      <img
+        class="logo_img"
+        src="{% static 'dracula_home_page/images/logo3.png' %}"
+        alt=""
+      />
+      <a href="{% url 'download_page' %}">Download</a>
+      <a href="{% url 'home' %}">Information</a>
+      <a href="{% url 'seepage' %}">Questions</a>
+    </div>
+
+    {% block content %} {% endblock content %}
+  </body>
+</html>

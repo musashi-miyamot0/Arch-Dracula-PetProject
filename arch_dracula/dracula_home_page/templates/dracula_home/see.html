@@ -1,0 +1,21 @@
+{% extends 'dracula_home/base.html' %} {% load static %} {% block css_link %}
+<link
+  rel="stylesheet"
+  href="{% static 'dracula_home_page/css/quesions.css' %}"
+/>
+{% endblock css_link %} {% block content %}
+<div>
+  <img
+    class="bat"
+    src="{% static 'dracula_home_page/images/bat_animal_4112.png' %}"
+    alt=""
+  />
+  <h1 class="header">Quesions</h1>
+</div>
+{% for udata in data %}
+<div class="block_text_{{forloop.counter}}">
+  <h1>{{udata.header}}</h1>
+  <p>{{udata.details|linebreaks}}</p>
+</div>
+
+{% endfor %} {% endblock content %}

@@ -1,0 +1,37 @@
+{% extends 'dracula_home/base.html' %} {% load static %} {% block css_link %}
+<link
+  rel="stylesheet"
+  href="{% static 'dracula_home_page/css/homepage.css' %}"
+/>
+{% endblock css_link %} {% block content %} {% for udata in data %}
+
+<div class="block_{{ forloop.counter }}"></div>
+<div class="post_header_{{ forloop.counter }}">
+  <h1 class="head_clear_table_{{ forloop.counter }}">{{udata.header}}</h1>
+  <p>{{ udata.content|linebreaks }}</p>
+</div>
+{% endfor %}
+
+<img
+  class="img_clear_table1"
+  src="{% static 'dracula_home_page/images/table_clear.jpg' %}"
+  alt
+/>
+<img
+  class="img_clear_table2"
+  src="{% static 'dracula_home_page/images/term.jpg' %}"
+  alt
+/>
+<img
+  class="img_clear_table3"
+  src="{% static 'dracula_home_page/images/app_dock.jpg' %}"
+  alt
+/>
+<img
+  class="img_clear_table4"
+  src="{% static 'dracula_home_page/images/btop_term.jpg' %}"
+  alt
+/>
+
+<script src="{% static 'dracula_home_page/js/homepage.js' %}"></script>
+{% endblock content %}
